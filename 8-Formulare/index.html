@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulare</title>
+</head>
+<body>
+    <h1>Formulare</h1>
+
+    <form autocomplete="on">
+        <label for="nume">Nume Prenume</label><br/>
+        <input type="text" id="nume" required/>
+
+        <br/><br/>
+
+        <label for="pass">Parola</label><br/>
+        <input type="password" id="pass" required>
+
+        <br/><br/>
+        <label for="zi">Ziua de nastere!</label><br>
+        <input type="date" required max="2006-01-01" min="2002-01-02">
+
+        <br><br>
+        
+        <input type="checkbox" required> Accept regulile site-ului
+
+        <br><br>
+        
+    
+        <input type="radio" name="pachet" id="pro" required ><label for="pro">PRO</label>
+        <input type="radio" name="pachet" id="basic" checked required ><label for="basic">BASIC</label>
+
+        <br><br>
+        
+        <label for="fisier"><u>Apasa aici si alege un fisier!<u></label>
+
+        <input hidden id="fisier" type="file" accept=".docx,.pdf" />
+
+        <br/>
+        
+        <label for="area">Lasa un mesaj!</label><br>
+        <textarea id="area" rows="7" cols="20" placeholder="salut"></textarea>
+        
+        <br><br>
+
+        <input type="submit" value="Transmite">
+        
+
+    </form>
+</body>
+</html>

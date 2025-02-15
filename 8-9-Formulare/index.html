@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulare</title>
+</head>
+<body>
+    <h1>Formulare</h1>
+
+    <form autocomplete="on">
+        <label for="nume">Nume Prenume</label><br/>
+        <input value="Ion" size="12" type="text" id="nume" required/>
+
+        <br/><br/>S
+
+        <label for="pass">Parola</label><br/>
+        <input size="12" maxlength="12" type="password" id="pass" required>
+
+        <br/><br/>
+        <label for="zi">Ziua de nastere!</label><br>
+        <input type="date" required max="2006-01-01" min="2002-01-02">
+
+
+        <br><br>
+
+        <label for="treapta">
+            Alege treapta de studii
+        </label>
+        <br>
+
+        <select id="treapta">
+            <option>Gimnaziu</option>
+            <option>Liceu</option>
+            <option>Universitate</option>            
+        </select>
+
+        <br><br>
+        
+        <input type="checkbox" required> Accept regulile site-ului
+
+        <br><br>
+        
+    
+        <input type="radio" name="pachet" id="pro" required ><label for="pro">PRO</label>
+        <input type="radio" name="pachet" id="basic" checked required ><label for="basic">BASIC</label>
+
+        <br><br>
+        
+        <label for="fisier"><u>Apasa aici si alege un fisier!<u></label>
+
+        <input hidden id="fisier" type="file" accept=".docx,.pdf" />
+
+        <br/>
+        
+        <label for="area">Lasa un mesaj!</label><br>
+        <textarea id="area" rows="7" cols="20" placeholder="salut"></textarea>
+        
+        <br><br>
+
+        <input type="submit" value="Transmite">
+
+    </form>
+
+    <form action="https://sheetdb.io/api/v1/uirv4a71kzhb8" method="post" autocomplete="on"></form>
+
+        <br><br><hr>
+        <fieldset>
+            <legend>Date contului</legend>
+            <label for="user">Username:</label><br/>
+            <input type="text" id="user" name="data[user]">
+        
+            <br><br>
+
+            <label for="email">Email:</label><br/>
+            <input type="email" id="email" name="data[email]">
+        
+            <br><br>
+
+            <label for="pass">Password:</label><br/>
+            <input type="password" id="pass" name="data[pass]">
+        </fieldset>
+        <fieldset>
+            <legend>Date personale</legend>
+            <label for="fullname">Fullname:</label><br/>
+            <input type="text" name="" id="fullname" name="data[fullname]">
+            
+            <br><br>
+
+            <label for="adres">Adresa:</label><br/>
+            <input type="text" id="adres" name="data[adres]">
+            
+            <br><br>
+            <label for="tara"></label>
+                <select id="tara" name="data[tara]">
+                    <option>Italia</option>
+                    <option>Romania</option>
+                    <option>Ungaria</option>
+                    <option>Anglia</option>
+                    <option>Danemarca</option>
+                    <option>Rusia</option>
+            </select>
+        </fieldset>
+        <br><br>
+        <input value="Trimite" type="submit">
+    
+    </form>
+
+    <h1>Rezervare carti online!</h1>
+<form>
+
+    <label for="mag">Localitate:</label><br>
+    <select id="mag">
+        <option value="">Briceni</option>
+        <option value="">Balti</option>
+        <option value="">Hincesti</option>
+        <option value="">Orhei</option>
+        <option value="">Chisinau</option>
+        <option value="">Ialoveni</option>
+    </select>
+    <br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email"><br><br>
+
+    <label for="book">Carti:</label><br>
+    <select id="book">
+        <option value="">Bailey</option>
+        <option value="">Harry Poter</option>
+        <option value="">Ana Huag</option>
+    </select><br><br>
+
+    <input value="Rezerveaza" type="submit">
+    <br><br>
+    
+    
+
+
+
+
+</form>
+</body>
+</html>

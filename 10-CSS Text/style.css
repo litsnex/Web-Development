@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Emblema+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+h1 {
+    color: rgb(0, 0, 139);
+    text-align: center;
+    text-decoration: underline  teal 3px; /* dotted, dashed, solid*/
+
+    text-transform: capitalize; /*uppercase lowercase capitalize*/
+    text-shadow: 2px 3px 5px black ; /*x y blur color*/
+    font-style: italic;
+    font-weight: bold;
+    font-family: emblema one;
+}
+
+p {
+    color: rgb(26, 129, 214, 99);
+    text-align: justify;
+    text-indent: 100px; 
+    letter-spacing: 2px; /*Distanta dintre pixeli*/
+    word-spacing: 5px;
+    line-height: 120%;
+    font-weight: 600;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 100%;    /* 100%-> 16px*/
+    font-family: ubuntu;
+
+}
+
